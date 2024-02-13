@@ -7,6 +7,10 @@ header {
     padding: 2em 0;
 }
 
+.logo {
+    margin-left: 5%;
+}
+
 .logo:hover {
     transform: scale(1.5);
 }
