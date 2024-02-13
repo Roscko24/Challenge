@@ -4,10 +4,10 @@ body {
 
 header {
     background-color: rgb(237, 242, 250);
-    padding: 2em 0;
 }
 
 .logo {
+    margin: 2em;
     margin-left: 5%;
 }
 
