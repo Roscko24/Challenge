@@ -1,0 +1,195 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: rgb(237, 242, 250);
+    padding: 2em 0;
+}
+
+.logo:hover {
+    transform: scale(1.5);
+}
+
+main {
+    background: rgb(237, 242, 250);
+}
+
+.areaMensaje{
+    display: inline-block;
+    width: 40%;
+    height: 480px;
+    vertical-align: top;
+    margin-left: 5%;
+}
+
+
+
+textarea {
+    color: blue;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: none; 
+    background: rgb(237, 242, 250);
+    width: 100%;
+    height: 100%;        
+}
+
+textarea::placeholder {
+    color: blue;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+textarea:focus::placeholder {
+    opacity: 0;
+} 
+
+.areaRespuesta {
+    overflow: auto;
+    background: white;
+    width: 30%;
+    height: 520px;
+    border: 2px solid black;
+    vertical-align: top ;
+    text-align: center;
+    float: right;
+    padding-top: 40px;
+    margin-right: 5%;
+    border-radius: 10px;
+    
+}
+
+.areaRespuesta h3 {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.areaRespuesta p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+.instrucciones {
+    margin: 10px 0 1% 6%;
+
+}
+
+.encriptar {
+    width: 20%;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background: darkblue;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 0 0 3em 5%;
+}
+
+.desencriptar {
+    width: 20%;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: darkblue;
+    background: lightgray;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 0 0 3em 1.5%;
+}
+
+.copiar {
+    width: 40%;
+    padding: 15px 40px;
+    vertical-align: bottom;
+    font-size: 15px;
+    font-weight: bold;
+    color: darkblue;
+    background: whitesmoke;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 2em 0 3em 1.5%;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.mostrar {
+    visibility: visible;
+    opacity: 1;
+}
+
+.Copyright {
+    width: 100%;
+    padding: 4em 0;
+    text-align: center;
+    background: linear-gradient(rgb(237, 242, 250) 10%,darkblue 90%);
+    color: white;
+    font-size: 1em;
+}
+
+
+@media screen and (max-width:821px) {
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .areaMensaje {
+        order: 1;
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .areaRespuesta {
+        order: 3;
+        width: 90%;
+        height: auto;
+        margin: 0 5%;
+               
+    }
+
+    #imagenRespuesta {
+        width: 0;
+        height: 0;
+    }
+    
+    .botones {
+        width: 90%;
+        order: 2;
+        margin: 0 5%;
+    }
+
+    .encriptar {
+        width: 45%;
+    }
+
+    .desencriptar {
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .encriptar {
+        width: 100%;
+        margin: 3% 1.5%;
+    }
+
+    .desencriptar {
+        width: 100%;
+    }
+
+}
